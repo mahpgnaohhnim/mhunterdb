@@ -16,12 +16,6 @@ class MonstarApi(private val monsterService: MonsterService) {
         return ResponseEntity(result, HttpStatus.OK)
     }
 
-    @GetMapping("/create/{name}")
-    fun createMonster(@PathVariable name: String): ResponseEntity<MonsterDto> {
-        val result = this.monsterService.createMonster(MonsterDto(null,name))
-        return ResponseEntity(result, HttpStatus.OK)
-    }
-
     @PostMapping("/create")
     fun createMonster(@RequestBody monsterDto: MonsterDto): ResponseEntity<MonsterDto> {
         val result = this.monsterService.createMonster(monsterDto)

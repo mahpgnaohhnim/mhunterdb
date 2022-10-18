@@ -1,7 +1,7 @@
 package de.mahpgnaohhnim.mhunterdb.monster.service
 
+import de.mahpgnaohhnim.mhunterdb.monster.domain.Monster
 import de.mahpgnaohhnim.mhunterdb.monster.dto.MonsterDto
-import de.mahpgnaohhnim.mhunterdb.monster.model.Monster
 import de.mahpgnaohhnim.mhunterdb.monster.repository.MonsterRepository
 import org.springframework.stereotype.Service
 
